@@ -1,0 +1,39 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"О комплексе", 
+		"/#about", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Размещение", 
+		"/rooms/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Лечение", 
+		"/#med", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Акции", 
+		"/#action", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Контакты", 
+		"/#contacts", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

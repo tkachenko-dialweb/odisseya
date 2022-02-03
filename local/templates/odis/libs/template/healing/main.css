@@ -1,0 +1,436 @@
+@font-face {
+  font-family: "Circe";
+  src: url("../fonts/Circe-Regular.ttf");
+}
+@font-face {
+  font-family: "Circe-Bold";
+  src: url("../fonts/Circe-Bold.ttf");
+}
+@font-face {
+  font-family: "Alethia-Next";
+  src: url("../fonts/AlethiaNext-Light.ttf");
+}
+body, h1, h2, h3, h4, h5, ul, p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+.btn {
+  background: #F7DAAE;
+  border-radius: 27.5px;
+  padding: 15px 35px;
+  font-family: "Circe", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  color: #262729;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.main-btn {
+  transition: 0.3s;
+}
+.main-btn:hover {
+  transform: scale(1.05);
+}
+
+@font-face {
+  font-family: "Billy-Ohio";
+  src: url("../../dependensies/fonts/Billy-Ohio.otf");
+}
+.main {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 120px 0;
+}
+.main .about {
+  margin-bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.main .about .about__left {
+  max-width: 840px;
+  font-family: "Circe-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  color: #262729;
+}
+.main .about .about__left p {
+  margin-bottom: 30px;
+}
+.main .about .about__left p:last-child {
+  margin-bottom: 0;
+}
+.main .about .about__right {
+  width: 404px;
+}
+.main .about .about__right .about__right_block {
+  box-sizing: border-box;
+  padding: 48px 40px;
+  background: #9CD6FF;
+  margin-bottom: 32px;
+}
+.main .about .about__right .about__right_block .block__title {
+  margin-bottom: 18px;
+  font-family: "Circe", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #8E9093;
+  font-weight: 500;
+}
+.main .about .about__right .about__right_block .block__days {
+  font-family: "Circe", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  color: #1E3056;
+  margin-bottom: 2px;
+}
+.main .about .about__right .about__right_block .block__time {
+  font-family: "Circe-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  color: #262729;
+  margin-bottom: 20px;
+}
+.main .about .about__right .about__right_block .block__day {
+  font-family: "Circe", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  color: #1E3056;
+  margin-bottom: 2px;
+}
+.main .about .about__right .about__right_block .block__weekend {
+  font-family: "Circe-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  color: #262729;
+}
+.main .about .about__right .about__right_button .btn {
+  width: 100%;
+}
+.main .blocks {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -55px;
+}
+.main .blocks .col {
+  width: 420px;
+}
+.main .blocks .col.m-top106 {
+  margin-top: 106px;
+}
+.main .blocks .col .block {
+  height: 605px;
+  background: rgba(38, 39, 41, 0.5);
+  position: relative;
+  padding: 87px 42px 48px 42px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 65px;
+  overflow: hidden;
+}
+.main .blocks .col .block:hover .block__bg-image {
+  transform: scale(1.1);
+}
+.main .blocks .col .block.h309 {
+  height: 309px;
+  padding-top: 100px;
+}
+.main .blocks .col .block .block__top-line {
+  display: flex;
+  align-items: center;
+  width: 236px;
+}
+.main .blocks .col .block .block__top-line .block__top-line_square {
+  background: #FFFFFF;
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  transform: rotate(45deg);
+}
+.main .blocks .col .block .block__top-line .block__top-line_line {
+  height: 1px;
+  flex: 1;
+  background: #FFFFFF;
+}
+.main .blocks .col .block .block__title {
+  font-family: "Alethia-Next", sans-serif;
+  font-weight: 350;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.main .blocks .col .block .block__button a {
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 50px;
+  font-family: "Circe", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  color: #FFFFFF;
+  padding: 14px 45px;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+.main .blocks .col .block .block__button a:before {
+  overflow: hidden;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5em;
+  height: 100%;
+  transition: 0.3s;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: 0px 0px 15px #fff;
+  box-shadow: 0px 0px 15px #fff;
+  -webkit-transform: translateX(-4em) skewX(45deg);
+  -ms-transform: translateX(-4em) skewX(45deg);
+  transform: translateX(-4em) skewX(45deg);
+}
+.main .blocks .col .block .block__button a:hover {
+  background: #FFFFFF;
+  color: #1E3056;
+}
+.main .blocks .col .block .block__button a:hover:before {
+  left: 200%;
+}
+.main .blocks .col .block .block__bg-image {
+  transition: 0.3s;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-position: center;
+  object-fit: cover;
+}
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  width: auto;
+  max-width: 632px;
+  margin: 20px auto;
+}
+.white-popup .white-popup__image {
+  width: 100%;
+}
+.white-popup .white-popup__image img {
+  width: 100%;
+  display: block;
+}
+.white-popup .white-popup__content {
+  padding: 50px;
+  max-width: 640px;
+  box-sizing: border-box;
+  position: relative;
+}
+.white-popup .white-popup__content .white-popup__days {
+  top: -50.5px;
+  right: 56px;
+  position: absolute;
+  box-sizing: border-box;
+  background: linear-gradient(231.34deg, #AE8864 15.35%, #F2D5AB 47.67%, #AE8864 85.26%);
+  border: 3px solid #FFFFFF;
+  width: 101px;
+  height: 101px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.white-popup .white-popup__content .white-popup__days span {
+  font-family: "Alethia-Next", sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.white-popup .white-popup__content .white-popup__days span.new {
+  font-family: "Billy-Ohio", sans-serif;
+  font-size: 43px;
+  line-height: 95px;
+  color: #FFFFFF;
+}
+.white-popup .white-popup__content .white-popup__days span.first {
+  margin-bottom: -6px;
+}
+.white-popup .white-popup__content .white-popup__days span.last {
+  margin-top: -5px;
+}
+.white-popup .white-popup__content .white-popup__days span.big {
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+}
+.white-popup .white-popup__content .white-popup__title {
+  font-family: "Alethia-Next", sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #262729;
+  margin-bottom: 4px;
+}
+.white-popup .white-popup__content .white-popup__title-spec {
+  font-family: "Circe-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  color: #262729;
+  margin-bottom: 4px;
+}
+.white-popup .white-popup__content .white-popup__description-spec {
+  font-family: "Alethia-Next", sans-serif;
+  font-weight: 350;
+  font-size: 14px;
+  line-height: 120%;
+  color: #262729;
+  margin-bottom: 30px;
+}
+.white-popup .white-popup__content .white-popup__description {
+  font-family: "Alethia-Next", sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #262729;
+  margin-bottom: 30px;
+}
+.white-popup .white-popup__content .white-popup__list {
+  padding-left: 15px;
+  list-style: none;
+}
+.white-popup .white-popup__content .white-popup__list .white-popup__list_item {
+  position: relative;
+  font-family: "Alethia-Next", sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 12px;
+  line-height: 180%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #262729;
+}
+.white-popup .white-popup__content .white-popup__list .white-popup__list_item .blue-square {
+  left: -15px;
+  top: 6px;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  background: #9CD6FF;
+  transform: rotate(45deg);
+}
+.white-popup .white-popup__footer {
+  width: 100%;
+  background: #1E3056;
+  padding: 25px 50px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.white-popup .white-popup__footer.cardiologia {
+  font-family: "Alethia Next", sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 12px;
+  line-height: 140%;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 30px 0;
+}
+.white-popup .white-popup__footer .white-popup__footer_block .block__label {
+  display: flex;
+  align-items: center;
+  font-family: "Alethia-Next", sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+.white-popup .white-popup__footer .white-popup__footer_block .block__label svg {
+  margin-right: 5px;
+}
+.white-popup .white-popup__footer .white-popup__footer_block .block__price {
+  font-family: "Alethia-Next", sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.white-popup .white-popup__footer .white-popup__footer_block .block__price span {
+  font-size: 30px;
+}
+
+.mfp-zoom-in {
+  /* start state */
+  /* animate in */
+  /* animate out */
+}
+.mfp-zoom-in .mfp-with-anim {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.8);
+}
+.mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.mfp-zoom-in.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  transform: scale(1);
+}
+.mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+.mfp-zoom-in.mfp-removing .mfp-with-anim {
+  transform: scale(0.8);
+  opacity: 0;
+}
+.mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+/*# sourceMappingURL=main.css.map */

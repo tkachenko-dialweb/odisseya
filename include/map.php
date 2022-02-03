@@ -1,0 +1,1 @@
+<iframe src="https://yandex.ru/map-widget/v1/-/CCUimUST-B" width="100%" height="100%" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>

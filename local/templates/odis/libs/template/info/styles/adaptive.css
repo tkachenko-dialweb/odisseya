@@ -1,0 +1,101 @@
+@media screen and (max-width: 1440px) {
+  .main {
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow-x: hidden;
+  }
+  .main .structure {
+    overflow: hidden;
+  }
+  .main .structure .structure-blocks {
+    overflow-x: auto;
+  }
+
+  .main .bubbles {
+    justify-content: space-between;
+  }
+  .main .bubbles .bubble {
+    width: 440px;
+    height: 440px;
+    padding: 90px;
+  }
+
+  .main .structure .structure-blocks .line-top {
+    width: 1189px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .main .bubbles {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main .requisites .requisites-content .requisites-content__faces {
+    padding-right: 0;
+  }
+
+  .main .requisites .requisites-content .requisites-content__line {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main .requisites .requisites-content .requisites-content__list li {
+    margin-bottom: 15px;
+    flex-direction: column;
+    line-height: 140%;
+    align-items: flex-start;
+  }
+  .main .requisites .requisites-content .requisites-content__list li p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .main .requisites .requisites-blocks {
+    margin-top: 60px;
+  }
+
+  .main .slider .slider-container {
+    margin-left: 80px;
+  }
+
+  .main .slider .slider-arrows {
+    left: 8px;
+    top: 320px;
+  }
+
+  .main .vacancies {
+    padding: 40px 10px;
+  }
+
+  .main .vacancies .vacancies__top .vacancies__line {
+    display: none;
+  }
+
+  .main .requisites {
+    flex-direction: column;
+  }
+
+  .main .structure .structure-title {
+    font-size: 28px;
+  }
+
+  .main .bubbles .bubble {
+    width: 100%;
+    height: 335px;
+    padding: 56px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main .slider .slider-pages {
+    flex-wrap: wrap;
+  }
+  .main .slider .slider-pages .page-square {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=adaptive.css.map */

@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Бронирование";
+$arDirProperties = Array(
+
+);
+?>

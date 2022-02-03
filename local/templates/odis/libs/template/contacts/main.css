@@ -1,0 +1,212 @@
+@font-face {
+  font-family: "Circe";
+  src: url("../fonts/Circe-Regular.ttf");
+}
+@font-face {
+  font-family: "Circe-Bold";
+  src: url("../fonts/Circe-Bold.ttf");
+}
+@font-face {
+  font-family: "Alethia-Next";
+  src: url("../fonts/AlethiaNext-Light.ttf");
+}
+body, h1, h2, h3, h4, h5, ul, p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+.btn {
+  background: #F7DAAE;
+  border-radius: 27.5px;
+  padding: 15px 35px;
+  font-family: "Circe", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  color: #262729;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.main-btn {
+  transition: 0.3s;
+}
+.main-btn:hover {
+  transform: scale(1.05);
+}
+
+.main {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 120px 0;
+}
+.main .map {
+  position: relative;
+  height: 650px;
+  display: flex;
+  align-items: end;
+  margin-bottom: 100px;
+}
+.main .map .map__image {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.main .map .map__address {
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 46px;
+}
+.main .map .map__address .map__address_icon {
+  margin-right: 25px;
+}
+.main .map .map__address .map__address_content .content__title {
+  font-family: "Circe", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #8E9093;
+  margin-bottom: 8px;
+}
+.main .map .map__address .map__address_content .content__text {
+  font-family: "Circe-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  color: #262729;
+}
+.main .contact-blocks {
+  display: flex;
+  margin-bottom: -16px;
+}
+.main .contact-blocks .contact-block {
+  width: 50%;
+}
+.main .contact-blocks .contact-block .contact-block__title {
+  font-family: "Circe", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #8E9093;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.main .contact-blocks .contact-block .contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.main .contact-blocks .contact-block .contact .contact__number {
+  text-decoration: none;
+  font-family: "Alethia-Next", sans-serif;
+  font-weight: 350;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #262729;
+}
+.main .contact-blocks .contact-block .contact .contact__dot {
+  width: 3px;
+  height: 3px;
+  margin: 0 18px;
+  background: #8E9093;
+  border-radius: 50%;
+}
+.main .contact-blocks .contact-block .contact .contact__text {
+  font-family: "Circe", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  color: #8E9093;
+}
+.main .contact-blocks .contact-block .contact .contact__mail {
+  font-family: "Circe", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  color: #262729;
+  text-decoration: none;
+}
+.main .contact-blocks .contact-block .contact .contact__mail:hover {
+  text-decoration: underline;
+  color: #1E3056;
+}
+.main .line {
+  margin: 80px 0;
+  display: flex;
+  align-items: center;
+}
+.main .line .line__square {
+  width: 10px;
+  height: 10px;
+  background: #1E3056;
+  box-sizing: border-box;
+  transform: rotate(45deg);
+}
+.main .line .line__line {
+  background: #1E3056;
+  flex: 1;
+  height: 1px;
+}
+.main .media {
+  display: flex;
+}
+.main .media .media-block {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.main .media .media-block.inst {
+  transition: 0.2s;
+}
+.main .media .media-block.inst:hover .media-block__label {
+  color: #1E3056;
+}
+.main .media .media-block .media-block__arrow {
+  width: 55px;
+  height: 55px;
+  background: #F7DAAE;
+  border-radius: 50%;
+  margin-right: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .media .media-block .media-block__text {
+  font-family: "Circe", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  color: #262729;
+}
+.main .media .media-block .media-block__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  background: #9CD6FF;
+  border-radius: 50%;
+  margin-right: 18px;
+}
+.main .media .media-block .media-block__label {
+  font-family: "Circe-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  color: #262729;
+}
+.main .media .media-block .media-block__label:hover {
+  color: #1E3056;
+}
+
+/*# sourceMappingURL=main.css.map */
