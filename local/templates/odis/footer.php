@@ -132,7 +132,7 @@ if (strpos($page_main_search['path'],"/booking") === false) : ?>
 <?php
 $page_main_search = parse_url($_SERVER['REQUEST_URI']);
 if (strpos($page_main_search['path'],"/booking") !== false) : ?>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     function scrollDown() {
         window.scrollTo({ top: document.getElementById('tl-booking-form').offsetHeight + 400, behavior: 'smooth' })
     }
@@ -144,7 +144,7 @@ if (strpos($page_main_search['path'],"/booking") !== false) : ?>
             }
         }, 300);
     });
-</script>
+</script> -->
 <?php endif; ?>
 </body>
 </html>

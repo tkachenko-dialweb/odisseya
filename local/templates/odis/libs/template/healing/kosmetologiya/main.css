@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "Circe";
+  src: url("../fonts/Circe-Regular.ttf");
+}
+@font-face {
+  font-family: "Circe-Bold";
+  src: url("../fonts/Circe-Bold.ttf");
+}
+@font-face {
+  font-family: "Alethia-Next";
+  src: url("../fonts/AlethiaNext-Light.ttf");
+}
+body, h1, h2, h3, h4, h5, ul, p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+.btn {
+  background: #F7DAAE;
+  border-radius: 27.5px;
+  padding: 15px 35px;
+  font-family: "Circe", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  color: #262729;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.main-btn {
+  transition: 0.3s;
+}
+.main-btn:hover {
+  transform: scale(1.05);
+}
+
+.main {
+  padding: 60px 0;
+  font-family: "Circe", sans-serif;
+  color: #777;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.main img {
+  max-width: 100%;
+}
+.main .review {
+  display: flex;
+}
+.main .review .review__block {
+  max-width: 570px;
+  flex: 1 0;
+}
+.main .review .review__block .review__block_name {
+  margin: 15px 0;
+  font-size: 24px;
+  line-height: 24px;
+}
+.main .review .review__block .review__block_image {
+  margin: 15px 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.main .review .review__block .review__block_image img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+.main .active, .main .accordion-title:hover {
+  background-color: #ccc;
+}
+.main .accordion-title {
+  background-color: #0063a3;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  color: white;
+  border-radius: 8px;
+  margin-top: 50px;
+}
+.main .accordion-title:before {
+  border: 6px solid transparent;
+  border-top-color: #fff;
+  margin-top: -3px;
+  right: 10px;
+}
+.main .accordion-content {
+  box-sizing: border-box;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  margin: 10px 0;
+}
+.main .accordion-content .accordion-content__text, .main .accordion-content .accordion-content__title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.main .table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.main .table td {
+  padding: 8px;
+}
+
+@media screen and (max-width: 1440px) {
+  .main {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main .review {
+    flex-direction: column;
+  }
+
+  .main .table td {
+    padding: 4px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

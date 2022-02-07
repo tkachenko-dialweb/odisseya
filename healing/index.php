@@ -6,6 +6,23 @@ use \Bitrix\Main\Page\Asset;
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/libs/template/healing/main.css');
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/libs/template/healing/adaptive.css');
 ?>
+<!-- </main>
+<section class="home hotel_room">
+		<div class="bg"><img src="<?= SITE_TEMPLATE_PATH ?>/img/header/healing.png" alt="healing"></div>
+		<div class="wrapper">
+			<div class="home_content">
+				<div class="present wow fadeInUp">
+					<div class="breadcrumb">
+						<a href="/">Главная</a><span></span><div class="current">Размещение</div>
+					</div>
+					<div class="title">
+						Размещение
+					</div>
+				</div>
+			</div>
+		</div>
+</section>
+<main class="main"> -->
 <?$APPLICATION->IncludeComponent(
     "bitrix:news", 
     "healing", 
@@ -79,7 +96,7 @@ Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/libs/template/healing/adaptive
 		"MESSAGE_404" => "",
 		"META_DESCRIPTION" => "-",	// Установить описание страницы из свойства
 		"META_KEYWORDS" => "-",	// Установить ключевые слова страницы из свойства
-		"NEWS_COUNT" => "20",	// Количество новостей на странице
+		"NEWS_COUNT" => "4",	// Количество новостей на странице
 		"PAGER_BASE_LINK_ENABLE" => "N",	// Включить обработку ссылок
 		"PAGER_DESC_NUMBERING" => "N",	// Использовать обратную навигацию
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",	// Время кеширования страниц для обратной навигации

@@ -11,10 +11,34 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
+
+use \Bitrix\Main\Page\Asset;
+
+?>
+<?
+$template = $arResult['VARIABLES']['ELEMENT_CODE'];
+
+switch ($template) {
+	case "kardiologiya":
+		Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/libs/template/healing/cardio/main.css');
+		break;
+	case "kosmetologiya":
+		Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/libs/template/healing/kosmetologiya/main.css');
+		// Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/libs/template/healing/kosmetologiya/main.js');
+		break;
+	case "programmy":
+		Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/libs/template/healing/programm/main.css');
+		break;
+	case "spetsialisty":
+		Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/libs/template/healing/specialists/main.css');
+		Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/libs/template/healing/specialists/main.scss');
+		break;
+}
+
 ?>
 <?$ElementID = $APPLICATION->IncludeComponent(
 	"bitrix:news.detail",
-	"",
+	$template,
 	Array(
 		"DISPLAY_DATE" => $arParams["DISPLAY_DATE"],
 		"DISPLAY_NAME" => $arParams["DISPLAY_NAME"],
@@ -68,7 +92,7 @@ $this->setFrameMode(true);
 	),
 	$component
 );?>
-<p><a href="<?=$arResult["FOLDER"].$arResult["URL_TEMPLATES"]["news"]?>"><?=GetMessage("T_NEWS_DETAIL_BACK")?></a></p>
+
 <?if($arParams["USE_RATING"]=="Y" && $ElementID):?>
 <?$APPLICATION->IncludeComponent(
 	"bitrix:iblock.vote",

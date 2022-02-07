@@ -36,7 +36,7 @@
 
 		<script src="<?= SITE_TEMPLATE_PATH ?>/libs/jquery/jquery.min.js"></script>
 		<!-- start TL head script -->
-		<script type='text/javascript'>
+		<!-- <script type='text/javascript'>
 			(function(w) {
 				var q = [
 					['setContext', 'TL-INT-odyssey', 'ru']
@@ -55,7 +55,7 @@
 					(d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s);
 				}
 			})(window);
-		</script>
+		</script> -->
 		<!-- end TL head script -->
 		<script type="text/javascript">
 		  (function() {    window.frisbuy=window.frisbuy||{},window.frisbuy.log=function(t,e,i){var o=localStorage.getItem("frb.log.heap");o=o&&JSON.parse(o)||[],o.push({msg:t,name:e,severity:i,time:Date.now()}),localStorage.setItem("frb.log.heap",JSON.stringify(o))},window.frisbuy.loadScript=function(t,e,i){var o=0,r=function(n){var a=document.createElement("script");n&&frisbuy.log({url:t,attemptLimit:o},"load.widget","high"),o>=e||(i&&(a.onload=i),a.onerror=r,a.src=t,setTimeout(function(){document.head.appendChild(a)},15*Math.pow(10,o)*o),o++)};e=e||3,r()},        frisbuy.loadScript('https://frisbuy.ru/embed/stories?embed_id=272d7f30-05a9-11ec-9365-0242ac130002');
@@ -67,7 +67,5 @@
 <? $APPLICATION->ShowPanel() // панель администратора ?>
 <body>
 
-<?
-include_once $_SERVER["DOCUMENT_ROOT"].'/local/templates/odis/include/template/header_main.php';
-?>
+<?include_once $_SERVER["DOCUMENT_ROOT"].'/local/templates/odis/include/template/header_main.php';?>
 <main <? if (!$isMainPage) echo 'class="main"' ?> >

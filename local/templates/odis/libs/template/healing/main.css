@@ -55,6 +55,7 @@ ul {
   margin-bottom: 120px;
   display: flex;
   justify-content: space-between;
+  background: none;
 }
 .main .about .about__left {
   max-width: 840px;

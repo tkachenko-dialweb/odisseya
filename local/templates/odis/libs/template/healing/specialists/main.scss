@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'Alethia-Next';
+  src: url("../fonts/AlethiaNext-Light.ttf");
+}
+
+@font-face {
+  font-family: 'Circe-Bold';
+  src: url("../fonts/Circe-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../fonts/Circe-Regular.ttf");
+}
+
+body, ul, li, h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+.workers {
+  max-width: 1560px;
+  margin: 0 auto;
+
+  .workers__title {
+    padding-left: 40px;
+    font-family: "Alethia-Next", sans-serif;
+    font-size: 50px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #262729;
+  }
+
+  .workers__blocks {
+    margin-bottom: 120px;
+    margin-top: -12px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .workers__block {
+      width: 300px;
+      margin: 60px 40px 0 40px;
+
+      &:nth-child(2n) {
+        margin-top: 192px;
+      }
+
+      .worker__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f7daae;
+        background: rgba(247, 218, 174, .2);
+        width: 100%;
+        height: 380px;
+        margin-bottom: 30px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+
+      .worker__name {
+        font-family: "Circe-Bold", sans-serif;
+        font-size: 20px;
+        line-height: 140%;
+        color: #262729;
+        margin-bottom: 2px;
+      }
+
+      .worker__profession {
+        font-family: "Circe", sans-serif;
+        font-size: 18px;
+        line-height: 140%;
+        color: #8E9093;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .workers {
+    padding: 0 20px;
+
+    .workers__blocks {
+      .workers__block {
+        margin-left: 86px;
+        margin-right: 86px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .workers .workers__blocks .workers__block {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .workers .workers__blocks .workers__block {
+    margin-left: 37px;
+    margin-right: 37px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .workers {
+    .workers__title {
+      font-size: 30px;
+      padding-left: 0;
+    }
+
+    .workers__blocks {
+      justify-content: center;
+      .workers__block {
+        margin: 60px 0 0;
+
+        &:nth-child(2n) {
+          margin-top: 60px;
+        }
+      }
+    }
+  }
+}

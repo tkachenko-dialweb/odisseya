@@ -88,17 +88,7 @@ $this->setFrameMode(true);
 <?*/?>
 <section class="about">
         <div class="about__left">
-            <p>
-                Пребывание в ОДИССЕЯ Wellness Resort сочетает эффективное лечение недорого с комфортным отдыхом на
-                Чёрном море. Курорт – важный этап восстановления после травм и острых патологий. Санатории и пансионаты
-                российского Черноморского побережья Кавказа ещё с прошлого века были популярными среди больных с
-                лёгочными, сердечно-сосудистыми, неврологическими заболеваниями.
-
-            </p>
-            <p>Помимо оздоровительных программ мы также предлагаем омолаживающие, общеукрепляющие и детокс-программы, в
-                которые входит широкий спектр косметологических методик.</p>
-            <p>Ознакомиться со всеми услугами нашего медицинского центра можно на медицинской стойке, расположенной в
-                холле 0 этажа.</p>
+            <?=$arResult['SECTION']['DESCRIPTION']?>
         </div>
         <div class="about__right">
             <div class="about__right_block">
@@ -124,51 +114,43 @@ $this->setFrameMode(true);
         </div>
     </section>
     <section class="blocks">
-        <div class="col wow fadeInUp">
-            <div class="block ">
-                <div class="block__top-line">
-                    <div class="block__top-line_square"></div>
-                    <div class="block__top-line_line"></div>
-                    <div class="block__top-line_square"></div>
+        <?foreach ($arResult['ITEMS'] as $key => $arItem) {?>
+            <?if ($key == 0 || $key == 3) {?>
+                <div class="col wow fadeInUp">
+                    <div class="block ">
+                        <div class="block__top-line">
+                            <div class="block__top-line_square"></div>
+                            <div class="block__top-line_line"></div>
+                            <div class="block__top-line_square"></div>
+                        </div>
+                        <h3 class="block__title"><?=$arItem['NAME']?></h3>
+                        <div class="block__button">
+                            <a href="<?=$arItem['DETAIL_PAGE_URL']?>">Подробнее</a>
+                        </div>
+                        <img src="<?=$arItem['PREVIEW_PICTURE']['SRC']?>" alt="<?=$arItem['NAME']?>" class="block__bg-image">
+                    </div>
                 </div>
-                <h3 class="block__title">кардиология </h3>
-                <div class="block__button">
-                    <a href="healing-cardio/index.html">Подробнее</a>
-                </div>
-                <img src="healing/images/DIM07566-min%201.png" alt="" class="block__bg-image">
-            </div>
-        </div>
-
-        <div class="col m-top106 wow fadeInUp">
-            <div class="block h309 ">
-                <h3 class="block__title">косметология</h3>
-                <div class="block__button">
-                    <a href="healing-kosmetologia/index.html">Подробнее</a>
-                </div>
-                <img src="healing/images/Mask%20Group-1.png" alt="" class="block__bg-image">
-            </div>
-            <div class="block h309 ">
-                <h3 class="block__title">специалисты</h3>
-                <div class="block__button">
-                    <a class="open-popup-link" href="#" data-effect="mfp-zoom-in">Подробнее</a>
-                </div>
-                <img src="healing/images/DIM07794-min%202.png" alt="" class="block__bg-image">
-            </div>
-        </div>
-
-        <div class="col wow fadeInUp">
-            <div class="block ">
-                <div class="block__top-line">
-
-                    <div class="block__top-line_square"></div>
-                    <div class="block__top-line_line"></div>
-                    <div class="block__top-line_square"></div>
-                </div>
-                <h3 class="block__title">программы</h3>
-                <div class="block__button">
-                    <a href="healing-program-v2/index.html">Подробнее</a>
-                </div>
-                <img src="healing/images/Mask%20Group.png" alt="" class="block__bg-image">
-            </div>
-        </div>
+            <?}else{?>
+                <?if ($key == 1) {?>
+                    <div class="col m-top106 wow fadeInUp">
+                        <div class="block h309 ">
+                            <h3 class="block__title"><?=$arItem['NAME']?></h3>
+                            <div class="block__button">
+                                <a href="<?=$arItem['DETAIL_PAGE_URL']?>">Подробнее</a>
+                            </div>
+                            <img src="<?=$arItem['PREVIEW_PICTURE']['SRC']?>" alt="<?=$arItem['NAME']?>" class="block__bg-image">
+                        </div>
+                <?}elseif($key == 2) {?>
+                        <div class="block h309 ">
+                            <h3 class="block__title"><?=$arItem['NAME']?></h3>
+                            <div class="block__button">
+                                <a class="open-popup-link" href="<?=$arItem['DETAIL_PAGE_URL']?>" data-effect="mfp-zoom-in">Подробнее</a>
+                            </div>
+                            <img src="<?=$arItem['PREVIEW_PICTURE']['SRC']?>" alt="<?=$arItem['NAME']?>" class="block__bg-image">
+                        </div>
+                    </div>
+                <?}?>
+            <?}?>
+        <?}?>
     </section>
+    <?//p($arResult);?>
