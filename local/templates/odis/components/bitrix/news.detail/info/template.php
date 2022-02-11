@@ -569,3 +569,4 @@ $this->setFrameMode(true);
             </div>
         </div>
     </section>
+    <?p($arResult)?>
