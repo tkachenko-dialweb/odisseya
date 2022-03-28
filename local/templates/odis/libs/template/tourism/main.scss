@@ -1,0 +1,290 @@
+@import "../../dependensies/styles/Helpers";
+
+.main {
+  @include maxWidth;
+  padding: 120px 0;
+
+  .main-description {
+    max-width: 960px;
+    font-family: "Circe-Bold", sans-serif;
+    font-size: 20px;
+    line-height: 140%;
+    color: #262729;
+    margin-bottom: 120px;
+  }
+
+  .main-btn {
+    cursor: pointer;
+    background: #F7DAAE;
+    border-radius: 27.5px;
+    font-family: "Circe", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    color: #262729;
+    width: 100%;
+    padding: 16px 0;
+    border: none;
+    outline: none;
+  }
+
+  .services {
+    margin-bottom: 100px;
+
+    .services-title {
+      font-family: "Alethia-Next", sans-serif;
+      font-size: 50px;
+      line-height: 120%;
+      text-transform: uppercase;
+      color: #262729;
+      margin-bottom: 60px;
+    }
+
+    .services-blocks {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .services-block {
+        width: 655px;
+        height: 416px;
+        box-sizing: border-box;
+        padding: 48px;
+        position: relative;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .services-block-bg {
+          background: rgba(38, 39, 41, .5);
+          position: absolute;
+          z-index: 0;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+        }
+
+        &:nth-child(2n) {
+          margin-top: 100px;
+          margin-bottom: 0;
+        }
+
+        .services-block__title {
+          font-family: "Alethia-Next", sans-serif;
+          font-size: 24px;
+          line-height: 120%;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          margin-bottom: 8px;
+          position: relative;
+          z-index: 1;
+        }
+
+        .services-block__people {
+          font-family: "Circe", sans-serif;
+          font-size: 18px;
+          line-height: 140%;
+          color: #FFFFFF;
+          position: relative;
+          z-index: 1;
+        }
+
+        .services-block__button {
+          width: 183px;
+          position: relative;
+          z-index: 1;
+        }
+
+        .services-block__bg-image {
+          left: 0;
+          top: 0;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+  }
+
+  .also {
+    margin-bottom: 100px;
+
+    .also-title {
+      font-family: "Alethia-Next", sans-serif;
+      font-size: 32px;
+      line-height: 120%;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #262729;
+      margin-bottom: 48px;
+    }
+
+    .also-blocks {
+      display: flex;
+
+      .also-block {
+        width: 480px;
+        height: 480px;
+        border: 1px solid #8E9093;
+        box-sizing: border-box;
+        padding: 132px 106px;
+        border-radius: 50%;
+
+        .also-block__top {
+          .also-block__number {
+            font-family: "Circe", sans-serif;
+            font-size: 18px;
+            line-height: 140%;
+            color: #8E9093;
+            margin-bottom: 12px;
+          }
+
+          .also-block__text {
+            font-family: "Circe-Bold", sans-serif;
+            font-size: 20px;
+            line-height: 140%;
+            color: #262729;
+            height: 120px;
+            overflow-y: hidden;
+          }
+        }
+
+        .also-block__buttons {
+          display: flex;
+
+          .also-block__buttons_main-btn {
+            width: 183px;
+
+            &.w211 {
+              width: 211px;
+            }
+          }
+
+          .also-block__buttons_sms {
+            margin-right: 32px;
+          }
+        }
+
+        &.dark {
+          position: relative;
+          overflow: hidden;
+          background: url("../images/bg-dark-block.png");
+          background-position: center;
+          background-size: cover;
+
+          .also-block__top {
+            .also-block__text {
+              color: #FFFFFF;
+            }
+          }
+
+          .dark__bg-image {
+            background: #1E3056;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .order {
+    .order-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 48px;
+
+      .order-title__text {
+        font-family: "Alethia-Next", sans-serif;
+        font-size: 32px;
+        line-height: 120%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #262729;
+        margin-right: 135px;
+      }
+
+      .order-title__line {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+
+        .order-title__line_square {
+          width: 10px;
+          height: 10px;
+          background: #1E3056;
+          border: 1px solid #1E3056;
+          box-sizing: border-box;
+          transform: rotate(45deg);
+          flex-shrink: 0;
+        }
+
+        .order-title__line_line {
+          background: #1E3056;
+          height: 1px;
+          width: 100%;
+          box-sizing: border-box;
+        }
+      }
+    }
+
+    .order-blocks {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .order-block {
+        display: flex;
+
+        .order-media {
+          &:first-child {
+            margin-right: 210px;
+            .order-media-links {
+              .order-media-link {
+                &:hover {
+                  text-decoration: underline;
+                  color: #1E3056;
+                }
+              }
+            }
+          }
+
+          .order-media__text {
+            font-family: "Circe-Bold", sans-serif;
+            font-size: 20px;
+            line-height: 140%;
+            color: #262729;
+          }
+
+          .order-media-links {
+            display: flex;
+            flex-direction: column;
+
+            .order-media-link {
+              text-decoration: none;
+              font-family: "Circe", sans-serif;
+              font-size: 18px;
+              line-height: 140%;
+              color: #8E9093;
+              &:hover {
+
+              }
+            }
+          }
+        }
+        .order-block__button {
+          width: 183px;
+        }
+      }
+    }
+  }
+}

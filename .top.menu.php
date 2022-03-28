@@ -16,21 +16,21 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Лечение", 
-		"/#med", 
+		"/healing/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Акции", 
-		"/#action", 
+		"/actions/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Контакты", 
-		"/#contacts", 
+		"/contacts/", 
 		Array(), 
 		Array(), 
 		"" 

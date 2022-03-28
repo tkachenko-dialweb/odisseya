@@ -1,0 +1,378 @@
+@font-face {
+  font-family: "Circe";
+  src: url("../fonts/Circe-Regular.ttf");
+}
+@font-face {
+  font-family: "Circe-Bold";
+  src: url("../fonts/Circe-Bold.ttf");
+}
+@font-face {
+  font-family: "Alethia-Next";
+  src: url("../fonts/AlethiaNext-Light.ttf");
+}
+body, h1, h2, h3, h4, h5, ul, p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+.btn {
+  background: #F7DAAE;
+  border-radius: 27.5px;
+  padding: 15px 35px;
+  font-family: "Circe", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  color: #262729;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.main-btn {
+  transition: 0.3s;
+}
+.main-btn:hover {
+  transform: scale(1.05);
+}
+
+.title-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 120px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title-container .title {
+  font-family: "Circe-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  color: #262729;
+  width: 960px;
+}
+.title-container .title-block {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background: #9CD6FF;
+  padding: 54px 0;
+  font-family: "Circe-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 120%;
+  color: #1E3056;
+  text-align: center;
+}
+
+.table-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+}
+.table-container .table-container__title {
+  font-family: "Alethia-Next", sans-serif;
+  font-weight: 350;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #262729;
+  margin-bottom: 48px;
+}
+.table-container .table .table__line {
+  display: flex;
+  padding: 25px 48px 13px 48px;
+  border-bottom: 1px solid #8E9093;
+  font-family: "Circe", sans-serif;
+  font-size: 18px;
+  justify-content: space-between;
+}
+.table-container .table .table__line .table__col {
+  line-height: 140%;
+  color: #262729;
+}
+.table-container .table .table__line .table__col.fst {
+  width: 7%;
+}
+.table-container .table .table__line .table__col.scd {
+  width: 20%;
+}
+.table-container .table .table__line .table__col.thrd {
+  width: 15%;
+}
+.table-container .table .table__line .table__col.fourth {
+  width: 35%;
+}
+.table-container .table .table__line.top {
+  font-family: "Circe-Bold", sans-serif;
+  font-size: 20px;
+  padding: 18px 48px;
+  background: #F7DAAE;
+  border-bottom: 0;
+}
+.table-container .table2 .table__line {
+  padding: 25px 48px 13px 48px;
+  border-bottom: 1px solid #8E9093;
+  font-size: 18px;
+  font-family: "Circe", sans-serif;
+  display: flex;
+}
+.table-container .table2 .table__line.last .table__col {
+  position: relative;
+}
+.table-container .table2 .table__line.last .table__col .table__col_full-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1000px;
+}
+.table-container .table2 .table__line.last .table__col.fst {
+  flex: unset;
+  margin-right: 20px;
+  width: 50px;
+}
+.table-container .table2 .table__line .table__col {
+  flex: 1 0;
+  line-height: 140%;
+  color: #262729;
+}
+.table-container .table2 .table__line .table__col.fst {
+  flex: unset;
+  margin-right: 20px;
+  width: 50px;
+}
+.table-container .table2 .table__line.top {
+  font-family: "Circe-Bold", sans-serif;
+  font-size: 20px;
+  padding: 18px 48px;
+  background: #F7DAAE;
+  border-bottom: 0;
+}
+
+.price-include {
+  position: relative;
+  height: 974px;
+  background: rgba(38, 39, 41, 0.5);
+  margin-bottom: 120px;
+}
+.price-include .price-include-bg {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.price-include .price-include-bg img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+.price-include .price-include-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.price-include .price-include-container .title {
+  padding-top: 260px;
+  font-family: "Alethia-Next", sans-serif;
+  font-weight: 350;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  max-width: 430px;
+  margin-bottom: 100px;
+}
+.price-include .price-include-container .blocks {
+  display: flex;
+}
+.price-include .price-include-container .blocks .block {
+  padding: 64px 31px 24px 31px;
+  flex: 1 0;
+  width: 240px;
+  height: 240px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.price-include .price-include-container .blocks .block .block__text {
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Circe", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+.place {
+  background: rgba(247, 218, 174, 0.2);
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+}
+.place .place-bg-text {
+  top: 140px;
+  right: -340px;
+  position: absolute;
+  font-family: "Alethia-Next", sans-serif;
+  font-weight: 350;
+  font-size: 260px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #F7DAAE;
+  opacity: 0.2;
+}
+.place .line {
+  display: flex;
+  align-items: center;
+}
+.place .line .line_square {
+  width: 10px;
+  height: 10px;
+  background: #1E3056;
+  box-sizing: border-box;
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+.place .line .line_line {
+  width: 100%;
+  height: 1px;
+  background: #1E3056;
+}
+.place .place__container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.place .place__container .place-title {
+  max-width: 720px;
+  font-family: "Alethia-Next", sans-serif;
+  font-weight: 350;
+  font-size: 50px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #262729;
+  margin-bottom: 70px;
+}
+.place .place__container .place-content {
+  display: flex;
+  justify-content: space-between;
+}
+.place .place__container .place-content .content-left .left__line {
+  max-width: 252px;
+  margin-bottom: 56px;
+}
+.place .place__container .place-content .content-left .left__text {
+  max-width: 600px;
+  font-family: "Circe", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  color: #262729;
+}
+.place .place__container .place-content .content-left .left__text p {
+  margin-bottom: 23px;
+}
+.place .place__container .place-content .content-left .left__text p:last-child {
+  margin-bottom: 0;
+}
+.place .place__container .place-content .content-right {
+  display: flex;
+}
+.place .place__container .place-content .content-right .right-block {
+  width: 300px;
+  height: 390px;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #9CD6FF;
+}
+.place .place__container .place-content .content-right .right-block:last-child {
+  background: #F7DAAE;
+}
+.place .place__container .place-content .content-right .right-block .right-block__line {
+  margin-bottom: 32px;
+}
+.place .place__container .place-content .content-right .right-block .right-block__title {
+  font-family: "Circe-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  color: #1E3056;
+  margin-bottom: 20px;
+}
+.place .place__container .place-content .content-right .right-block .right-block_schedule {
+  font-family: "Alethia-Next", sans-serif;
+  font-weight: 350;
+  font-size: 28px;
+  line-height: 100%;
+  color: #1E3056;
+}
+.place .place__container .place-content .content-right .right-block .right__description {
+  font-family: "Circe", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  color: #1E3056;
+}
+.place .place__container .place-content .content-right .right-block:first-child {
+  margin-right: 120px;
+}
+
+.video {
+  height: 974px;
+  position: relative;
+  background: rgba(38, 39, 41, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.video .title {
+  font-family: "Alethia-Next", sans-serif;
+  font-weight: 350;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.video .play_button {
+  margin-top: 44px;
+  background: #F7DAAE;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.video .image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.video .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*# sourceMappingURL=main.css.map */

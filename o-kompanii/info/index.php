@@ -4,12 +4,11 @@ $APPLICATION->SetTitle("Инфорамция");
 
 use \Bitrix\Main\Page\Asset;
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/libs/template/info/styles/main.css');
-Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/libs/template/info/styles/main.scss');
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/libs/template/info/styles/adaptive.css');
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/libs/template/info/js/slick.css');
 
-Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/libs/template/info/js/slick.min.js');
-Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/libs/template/info/js/main.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/libs/template/info/js/main.css');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/libs/template/info/js/slick.min.css');
 ?>
 
 <?$APPLICATION->IncludeComponent(

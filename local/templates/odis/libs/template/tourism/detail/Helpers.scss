@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Circe";
+  src: url("../fonts/Circe-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Circe-Bold";
+  src: url("../fonts/Circe-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Alethia-Next";
+  src: url("../fonts/AlethiaNext-Light.ttf");
+}
+
+@mixin maxWidth {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+body,h1,h2,h3,h4,h5,ul,p, {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+.btn {
+    background: #F7DAAE;
+    border-radius: 27.5px;
+    padding: 15px 35px;
+    font-family: "Circe", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    color: #262729;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  transition: .3s;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.main-btn {
+  transition: .3s;
+  &:hover {
+    transform: scale(1.05);
+  }
+}

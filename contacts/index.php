@@ -1,7 +1,10 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Контакты");
-\Bitrix\Main\Page\Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/libs/template/contacts/main.css');
+// \Bitrix\Main\Page\Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/libs/template/contacts/main.css');
+use \Bitrix\Main\Page\Asset;
+Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/libs/template/contacts/main.css');
+Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/libs/template/contacts/adaptive.css');
 
 // Данные из модуля Дополниетлные настройки (Контенет -> Дополниетлные настройки)
 use \Bitrix\Main\Config\Option;

@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Circe";
+  src: url("../fonts/Circe-Regular.ttf");
+}
+@font-face {
+  font-family: "Circe-Bold";
+  src: url("../fonts/Circe-Bold.ttf");
+}
+@font-face {
+  font-family: "Alethia-Next";
+  src: url("../fonts/AlethiaNext-Light.ttf");
+}
+body, h1, h2, h3, h4, h5, ul, p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+.btn {
+  background: #F7DAAE;
+  border-radius: 27.5px;
+  padding: 15px 35px;
+  font-family: "Circe", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  color: #262729;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.main-btn {
+  transition: 0.3s;
+}
+.main-btn:hover {
+  transform: scale(1.05);
+}
+
+.main {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 120px 0;
+}
+.main .title {
+  font-family: "Circe-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  color: #262729;
+}
+.main .arenda {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.main .arenda .arenda-list {
+  font-family: "Circe", sans-serif;
+  font-size: 18px;
+  line-height: 160%;
+  color: #8E9093;
+  padding-left: 22px;
+  list-style: none;
+}
+.main .arenda .arenda-list li {
+  position: relative;
+}
+.main .arenda .arenda-list li .square-list {
+  width: 6px;
+  height: 6px;
+  transform: rotate(45deg);
+  left: -16px;
+  top: 12px;
+  position: absolute;
+  background: #8E9093;
+}
+.main .images {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.main .images .images-block {
+  width: 430px;
+  height: 430px;
+}
+.main .images .images-block:nth-child(2n) {
+  margin-top: 100px;
+}
+.main .images .images-block img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*# sourceMappingURL=main.css.map */

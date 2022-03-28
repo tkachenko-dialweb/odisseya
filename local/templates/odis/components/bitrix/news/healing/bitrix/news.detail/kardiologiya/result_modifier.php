@@ -11,3 +11,10 @@ if (!empty($arResult['PROPERTIES']['SPECIALIST']['VALUE']))
         $arResult['PROPERTIES']['SPECIALIST']['DETAIL_TEXT'] = $arFields;
     }
 }
+
+if (!empty($arResult['PROPERTIES']['MORE_PHOTO']['VALUE']))
+{
+    foreach ($arResult['PROPERTIES']['MORE_PHOTO']['VALUE'] as $key => $value) {
+        $arResult['PROPERTIES']['MORE_PHOTO']['URLS'][$key] = CFile::GetPath($value);
+    }
+}

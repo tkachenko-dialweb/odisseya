@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Circe";
+  src: url("../fonts/Circe-Regular.ttf");
+}
+@font-face {
+  font-family: "Circe-Bold";
+  src: url("../fonts/Circe-Bold.ttf");
+}
+@font-face {
+  font-family: "Alethia-Next";
+  src: url("../fonts/AlethiaNext-Light.ttf");
+}
+body, h1, h2, h3, h4, h5, ul, p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+.btn {
+  background: #F7DAAE;
+  border-radius: 27.5px;
+  padding: 15px 35px;
+  font-family: "Circe", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  color: #262729;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.main-btn {
+  transition: 0.3s;
+}
+.main-btn:hover {
+  transform: scale(1.05);
+}
+
+.main .stocks {
+  position: relative;
+  overflow: hidden;
+  padding: 120px 0;
+}
+.main .stocks .stocks__bg-text {
+  position: absolute;
+  font-family: "Alethia-Next", sans-serif;
+  font-weight: 350;
+  font-size: 470px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(247, 218, 174, 0.2);
+  top: 327px;
+  left: -97px;
+  z-index: -1;
+}
+.main .stocks .stocks-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main .stocks .stocks-container .stock {
+  margin-bottom: 80px;
+  width: 430px;
+}
+.main .stocks .stocks-container .stock.m-top96 {
+  margin-top: 96px;
+}
+.main .stocks .stocks-container .stock .stock__image {
+  width: 100%;
+  height: 324px;
+  margin-bottom: 30px;
+  display: block;
+}
+.main .stocks .stocks-container .stock .stock__image img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+.main .stocks .stocks-container .stock .stock__title {
+  font-family: "Alethia-Next", sans-serif;
+  font-weight: 350;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #262729;
+  margin-bottom: 6px;
+}
+.main .stocks .stocks-container .stock .stock__date {
+  font-family: "Circe", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  color: #262729;
+}
+
+/*# sourceMappingURL=main.css.map */

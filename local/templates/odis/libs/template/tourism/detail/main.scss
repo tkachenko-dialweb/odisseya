@@ -1,0 +1,56 @@
+@import "../../dependensies/styles/Helpers";
+
+.main {
+  @include maxWidth;
+  padding: 120px 0;
+  .title {
+    font-family: "Circe-Bold", sans-serif;
+    font-size: 20px;
+    line-height: 140%;
+    color: #262729;
+  }
+  .arenda {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    .arenda-list {
+      font-family: "Circe", sans-serif;
+      font-size: 18px;
+      line-height: 160%;
+      color: #8E9093;
+      padding-left: 22px;
+      list-style: none;
+      li {
+        position: relative;
+        .square-list {
+          width: 6px;
+          height: 6px;
+          transform: rotate(45deg);
+          left: -16px;
+          top: 12px;
+          position: absolute;
+          background: #8E9093;
+        }
+      }
+    }
+  }
+  .images {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    .images-block {
+      width: 430px;
+      height: 430px;
+      &:nth-child(2n) {
+        margin-top: 100px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}

@@ -31,9 +31,9 @@ if (strpos($page_main_search['path'],"/booking") === false) : ?>
 <footer>
 	<div class="wrapper">
 		<div class="head">
-			<div class="logo">
+			<a href="/" class="logo">
 				<img src="<?= SITE_TEMPLATE_PATH ?>/img/logo_footer.svg" alt="">
-			</div>
+			</a>
 			<ul class="menu">
 				<?$APPLICATION->IncludeComponent(
 					"bitrix:menu",

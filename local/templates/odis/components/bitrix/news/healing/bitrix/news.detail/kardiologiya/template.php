@@ -26,13 +26,14 @@
     </section>
     <h2 class="main-titles">Кардиология Мирового уровня в ОДИССЕЯ Wellness Resort</h2>
     <section class="main-blocks">
-        <?foreach ($arResult['PROPERTIES']['MORE_PHOTO']['VALUE'] as $key => $arItem) {?>
+        <?foreach ($arResult['PROPERTIES']['MORE_PHOTO']['URLS'] as $key => $arItem) {?>
+            <?if (empty($arItem)) {continue;}?>
             <div class="main-block">
                 <div class="main-block__text">
                     <?=$arResult['PROPERTIES']['MORE_PHOTO']['DESCRIPTION'][$key]?>
                 </div>
                 <div class="main-block__image">
-                    <img src="<?= CFile::GetPath($arItem);?>" alt="picture">
+                    <img src="<?= $arItem;?>" alt="picture">
                 </div>
             </div>
         <?}?>

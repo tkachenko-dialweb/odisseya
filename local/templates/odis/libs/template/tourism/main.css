@@ -1,0 +1,285 @@
+@font-face {
+  font-family: "Circe";
+  src: url("../fonts/Circe-Regular.ttf");
+}
+@font-face {
+  font-family: "Circe-Bold";
+  src: url("../fonts/Circe-Bold.ttf");
+}
+@font-face {
+  font-family: "Alethia-Next";
+  src: url("../fonts/AlethiaNext-Light.ttf");
+}
+body, h1, h2, h3, h4, h5, ul, p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+.btn {
+  background: #F7DAAE;
+  border-radius: 27.5px;
+  padding: 15px 35px;
+  font-family: "Circe", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  color: #262729;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.main-btn {
+  transition: 0.3s;
+}
+.main-btn:hover {
+  transform: scale(1.05);
+}
+
+.main {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 120px 0;
+}
+.main .main-description {
+  max-width: 960px;
+  font-family: "Circe-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  color: #262729;
+  margin-bottom: 120px;
+}
+.main .main-btn {
+  cursor: pointer;
+  background: #F7DAAE;
+  border-radius: 27.5px;
+  font-family: "Circe", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  color: #262729;
+  width: 100%;
+  padding: 16px 0;
+  border: none;
+  outline: none;
+}
+.main .services {
+  margin-bottom: 100px;
+}
+.main .services .services-title {
+  font-family: "Alethia-Next", sans-serif;
+  font-size: 50px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #262729;
+  margin-bottom: 60px;
+}
+.main .services .services-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main .services .services-blocks .services-block {
+  width: 655px;
+  height: 416px;
+  box-sizing: border-box;
+  padding: 48px;
+  position: relative;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main .services .services-blocks .services-block .services-block-bg {
+  background: rgba(38, 39, 41, 0.5);
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.main .services .services-blocks .services-block:nth-child(2n) {
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+.main .services .services-blocks .services-block .services-block__title {
+  font-family: "Alethia-Next", sans-serif;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  position: relative;
+  z-index: 1;
+}
+.main .services .services-blocks .services-block .services-block__people {
+  font-family: "Circe", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 1;
+}
+.main .services .services-blocks .services-block .services-block__button {
+  width: 183px;
+  position: relative;
+  z-index: 1;
+}
+.main .services .services-blocks .services-block .services-block__bg-image {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  object-position: center;
+}
+.main .also {
+  margin-bottom: 100px;
+}
+.main .also .also-title {
+  font-family: "Alethia-Next", sans-serif;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #262729;
+  margin-bottom: 48px;
+}
+.main .also .also-blocks {
+  display: flex;
+}
+.main .also .also-blocks .also-block {
+  width: 480px;
+  height: 480px;
+  border: 1px solid #8E9093;
+  box-sizing: border-box;
+  padding: 132px 106px;
+  border-radius: 50%;
+}
+.main .also .also-blocks .also-block .also-block__top .also-block__number {
+  font-family: "Circe", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  color: #8E9093;
+  margin-bottom: 12px;
+}
+.main .also .also-blocks .also-block .also-block__top .also-block__text {
+  font-family: "Circe-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  color: #262729;
+  height: 120px;
+  overflow-y: hidden;
+}
+.main .also .also-blocks .also-block .also-block__buttons {
+  display: flex;
+}
+.main .also .also-blocks .also-block .also-block__buttons .also-block__buttons_main-btn {
+  width: 183px;
+}
+.main .also .also-blocks .also-block .also-block__buttons .also-block__buttons_main-btn.w211 {
+  width: 211px;
+}
+.main .also .also-blocks .also-block .also-block__buttons .also-block__buttons_sms {
+  margin-right: 32px;
+}
+.main .also .also-blocks .also-block.dark {
+  position: relative;
+  overflow: hidden;
+  background: url("../images/bg-dark-block.png");
+  background-position: center;
+  background-size: cover;
+}
+.main .also .also-blocks .also-block.dark .also-block__top .also-block__text {
+  color: #FFFFFF;
+}
+.main .also .also-blocks .also-block.dark .dark__bg-image {
+  background: #1E3056;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.main .order .order-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.main .order .order-title .order-title__text {
+  font-family: "Alethia-Next", sans-serif;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #262729;
+  margin-right: 135px;
+}
+.main .order .order-title .order-title__line {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.main .order .order-title .order-title__line .order-title__line_square {
+  width: 10px;
+  height: 10px;
+  background: #1E3056;
+  border: 1px solid #1E3056;
+  box-sizing: border-box;
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+.main .order .order-title .order-title__line .order-title__line_line {
+  background: #1E3056;
+  height: 1px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.main .order .order-blocks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .order .order-blocks .order-block {
+  display: flex;
+}
+.main .order .order-blocks .order-block .order-media:first-child {
+  margin-right: 210px;
+}
+.main .order .order-blocks .order-block .order-media:first-child .order-media-links .order-media-link:hover {
+  text-decoration: underline;
+  color: #1E3056;
+}
+.main .order .order-blocks .order-block .order-media .order-media__text {
+  font-family: "Circe-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  color: #262729;
+}
+.main .order .order-blocks .order-block .order-media .order-media-links {
+  display: flex;
+  flex-direction: column;
+}
+.main .order .order-blocks .order-block .order-media .order-media-links .order-media-link {
+  text-decoration: none;
+  font-family: "Circe", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  color: #8E9093;
+}
+.main .order .order-blocks .order-block .order-block__button {
+  width: 183px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,20 +1,15 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Инфорамция");
+$APPLICATION->SetTitle("Пляж");
 
 use \Bitrix\Main\Page\Asset;
-Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/libs/template/info/styles/main.css');
-Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/libs/template/info/styles/main.scss');
-Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/libs/template/info/styles/adaptive.css');
-Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/libs/template/info/js/slick.css');
-
-Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/libs/template/info/js/slick.min.js');
-Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/libs/template/info/js/main.js');
+Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/libs/template/plaj/main.css');
+Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/libs/template/plaj/adaptive.css');
 ?>
 
 <?$APPLICATION->IncludeComponent(
 	"bitrix:news.detail",
-	"info",
+	"plaj",
 	Array(
 		"ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"ADD_ELEMENT_CHAIN" => "Y",
@@ -37,11 +32,11 @@ Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/libs/template/info/js/main.js')
 		"DISPLAY_PREVIEW_TEXT" => "Y",
 		"DISPLAY_TOP_PAGER" => "N",
 		"ELEMENT_CODE" => "",
-		"ELEMENT_ID" => "67",
+		"ELEMENT_ID" => "137",
 		"FIELD_CODE" => array("ID", "CODE", "XML_ID", "NAME", "TAGS", "SORT", "PREVIEW_TEXT", "PREVIEW_PICTURE", "DETAIL_TEXT", "DETAIL_PICTURE", "DATE_ACTIVE_FROM", "ACTIVE_FROM", "DATE_ACTIVE_TO", "ACTIVE_TO", "SHOW_COUNTER", "SHOW_COUNTER_START", "IBLOCK_TYPE_ID", "IBLOCK_ID", "IBLOCK_CODE", "IBLOCK_NAME", "IBLOCK_EXTERNAL_ID", "DATE_CREATE", "CREATED_BY", "CREATED_USER_NAME", "TIMESTAMP_X", "MODIFIED_BY", "USER_NAME", ""),
 		"FILE_404" => "/404.php",
-		"IBLOCK_ID" => "14",
-		"IBLOCK_TYPE" => "info",
+		"IBLOCK_ID" => "20",
+		"IBLOCK_TYPE" => "content",
 		"IBLOCK_URL" => "",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
 		"MESSAGE_404" => "",
@@ -49,7 +44,7 @@ Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/libs/template/info/js/main.js')
 		"META_KEYWORDS" => "-",
 		"PAGER_BASE_LINK_ENABLE" => "N",
 		"PAGER_SHOW_ALL" => "N",
-		"PAGER_TEMPLATE" => "info",
+		"PAGER_TEMPLATE" => ".default",
 		"PAGER_TITLE" => "Страница",
 		"PROPERTY_CODE" => array("ADDRESS", "PRE_DIRECTOR_1", "PRE_DIRECTOR_2", "WORKING_DAY", "REQUISITES", ""),
 		"SET_BROWSER_TITLE" => "Y",

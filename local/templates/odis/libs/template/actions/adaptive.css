@@ -1,0 +1,55 @@
+@media screen and (max-width: 1440px) {
+  .main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .main .stocks .stocks__bg-text {
+    position: absolute;
+    font-family: "Alethia-Next", sans-serif;
+    font-weight: 350;
+    font-size: 310px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgba(247, 218, 174, 0.2);
+    top: 460px;
+    left: -20px;
+    z-index: -1;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .main .stocks .stocks-container {
+    justify-content: space-evenly;
+  }
+  .main .stocks .stocks-container .stock.m-top96 {
+    margin-top: unset;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main .stocks .stocks-container {
+    justify-content: space-between;
+  }
+  .main .stocks .stocks-container .stock {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main .stocks .stocks__bg-text {
+    display: none;
+  }
+
+  .main .stocks .stocks-container .stock {
+    width: 100%;
+  }
+
+  .main .stocks .stocks-container .stock {
+    margin-bottom: 20px;
+  }
+  .main .stocks .stocks-container .stock.m-top96 {
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=adaptive.css.map */
