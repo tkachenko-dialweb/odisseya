@@ -1,3 +1,28 @@
+.main {
+    max-width: unset;
+    margin: 0 auto;
+    padding: unset;
+}
+.header {
+    position: absolute;
+}
+
+.main .about {
+	padding: 80px 0 120px;
+    background: #FDF8EF;
+}
+
+.section-custom {
+	padding: 80px 15px 120px 15px;
+    background: #fff;
+	position: relative;
+    z-index: 9;
+}
+
+.workers {
+    padding: 120px 10px;
+}
+
 .tl-widgets-container {
     display: none!important;
 }
@@ -5,3 +30,51 @@
     text-decoration: none;
     color: unset;
 }
+.present.wow.fadeInUp{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.widget{
+	max-width: 5%;
+	fill: white;
+}
+.about_button{
+	display: block;
+	width: 100%;
+	color: black;
+	padding: 1rem 0;
+	text-align: center;
+	border: 1px solid;
+	border-radius: 5rem;
+	margin: 1rem 0 0 0;
+}
+.jotting{
+	background: rgba(247, 218, 174, 0.2);
+}
+.jotting ul{
+	padding-left: revert;
+}
+
+/* Top menu - start */
+.header .navigation_menu .main_menu {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header .navigation_menu .main_menu .item {
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+    width: max-content;
+}
+.header .navigation_menu .main_menu .item a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 30px;
+}
+/* Top menu - end */

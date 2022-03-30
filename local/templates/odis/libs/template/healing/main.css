@@ -1,15 +1,3 @@
-@font-face {
-  font-family: "Circe";
-  src: url("../fonts/Circe-Regular.ttf");
-}
-@font-face {
-  font-family: "Circe-Bold";
-  src: url("../fonts/Circe-Bold.ttf");
-}
-@font-face {
-  font-family: "Alethia-Next";
-  src: url("../fonts/AlethiaNext-Light.ttf");
-}
 body, h1, h2, h3, h4, h5, ul, p {
   margin: 0;
 }
@@ -49,20 +37,23 @@ ul {
 .main {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 120px 0;
+  //padding: 120px 0;
+}
+.header {
+	position: inherit;
 }
 .main .about {
   margin-bottom: 120px;
   display: flex;
   justify-content: space-between;
   background: none;
+  color: #8E9093;
 }
 .main .about .about__left {
   max-width: 840px;
   font-family: "Circe-Bold", sans-serif;
   font-size: 20px;
   line-height: 140%;
-  color: #262729;
 }
 .main .about .about__left p {
   margin-bottom: 30px;

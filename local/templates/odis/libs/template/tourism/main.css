@@ -1,15 +1,3 @@
-@font-face {
-  font-family: "Circe";
-  src: url("../fonts/Circe-Regular.ttf");
-}
-@font-face {
-  font-family: "Circe-Bold";
-  src: url("../fonts/Circe-Bold.ttf");
-}
-@font-face {
-  font-family: "Alethia-Next";
-  src: url("../fonts/AlethiaNext-Light.ttf");
-}
 body, h1, h2, h3, h4, h5, ul, p {
   margin: 0;
 }

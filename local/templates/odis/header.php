@@ -29,7 +29,9 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="#202442">
 		<link rel="stylesheet" href="<?= SITE_TEMPLATE_PATH ?>/css/normalize.css">
 		<link rel="stylesheet" href="<?= SITE_TEMPLATE_PATH ?>/css/main.css">
-
+<link rel="stylesheet" href="/odisseya-info/info/styles/main.css">
+<link rel="stylesheet" href="/odisseya-info/info/styles/adaptive.css">
+<link rel="stylesheet" href="/odisseya-info/info/js/slick.css">
 		<?
 			Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/custom.css');
 		?>

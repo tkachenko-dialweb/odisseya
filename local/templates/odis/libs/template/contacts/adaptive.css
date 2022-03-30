@@ -41,8 +41,10 @@
     flex-wrap: wrap;
   }
 
-  .main .media {
-    flex-direction: column;
+  .main .media{
+	flex-direction: column;
+	gap: 1rem;
+	margin-bottom: 1rem;
   }
   .main .media .media-block {
     width: unset;

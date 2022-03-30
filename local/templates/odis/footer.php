@@ -1,3 +1,4 @@
+
 <?php
 $page_main_search = parse_url($_SERVER['REQUEST_URI']);
 if (strpos($page_main_search['path'],"/booking") === false) : ?>

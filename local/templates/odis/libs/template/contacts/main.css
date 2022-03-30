@@ -1,15 +1,3 @@
-@font-face {
-  font-family: "Circe";
-  src: url("../fonts/Circe-Regular.ttf");
-}
-@font-face {
-  font-family: "Circe-Bold";
-  src: url("../fonts/Circe-Bold.ttf");
-}
-@font-face {
-  font-family: "Alethia-Next";
-  src: url("../fonts/AlethiaNext-Light.ttf");
-}
 body, h1, h2, h3, h4, h5, ul, p {
   margin: 0;
 }
@@ -42,10 +30,13 @@ ul {
   transform: scale(1.05);
 }
 
-.main {
+.main{
   max-width: 1440px;
   margin: 0 auto;
-  padding: 120px 0;
+  //padding: 120px 0;
+}
+.header{
+	position: inherit;
 }
 .main .map {
   position: relative;
@@ -54,6 +45,7 @@ ul {
   align-items: end;
   margin-bottom: 100px;
 }
+/*
 .main .map .map__image {
   z-index: -1;
   position: absolute;
@@ -61,12 +53,17 @@ ul {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}*/
+.map iframe{
+	position: absolute !important;
+	width: 100%;
 }
-.main .map .map__address {
+.main .map .map__address{
   background: white;
   display: flex;
   align-items: center;
   padding: 46px;
+  position: relative;
 }
 .main .map .map__address .map__address_icon {
   margin-right: 25px;
@@ -161,6 +158,7 @@ ul {
 }
 .main .media {
   display: flex;
+  margin-bottom: 2rem;
 }
 .main .media .media-block {
   width: 50%;

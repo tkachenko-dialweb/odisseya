@@ -1,15 +1,3 @@
-@font-face {
-  font-family: "Circe";
-  src: url("../fonts/Circe-Regular.ttf");
-}
-@font-face {
-  font-family: "Circe-Bold";
-  src: url("../fonts/Circe-Bold.ttf");
-}
-@font-face {
-  font-family: "Alethia-Next";
-  src: url("../fonts/AlethiaNext-Light.ttf");
-}
 body, h1, h2, h3, h4, h5, ul, p {
   margin: 0;
 }
@@ -43,7 +31,6 @@ ul {
 }
 
 .main {
-  padding: 60px 0;
   font-family: "Circe", sans-serif;
   color: #777;
   max-width: 1440px;
@@ -122,8 +109,8 @@ ul {
 
 @media screen and (max-width: 1440px) {
   .main {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 @media screen and (max-width: 425px) {
