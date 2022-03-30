@@ -3,3 +3,6 @@
 bitrix/
 upload/
 /local/templates/odis/libs/template/info/images/
+.vscode/sftp.json
+.gitignore
+.vscode/sftp.json

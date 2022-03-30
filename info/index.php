@@ -11,14 +11,40 @@ Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/libs/template/info/js/slick.cs
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/libs/template/info/js/slick.min.js');
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/libs/template/info/js/main.js');
 ?>
-
+<section class="home hotel_room">
+	<div class="bg">
+		<? if (!empty($APPLICATION->GetProperty("SECTION_HEADER_PICTURE"))) { ?>
+			<img src="<?= $APPLICATION->ShowProperty("SECTION_HEADER_PICTURE") ?>" alt="<?= $APPLICATION->ShowTitle() ?>">
+		<? } else { ?>
+			<img src="<?= SITE_TEMPLATE_PATH ?>/img/header/healing.png" alt="<?= $APPLICATION->ShowTitle() ?>">
+		<? } ?>
+	</div>
+	<div class="wrapper">
+		<div class="home_content">
+			<div class="present wow fadeInUp">
+				<?$APPLICATION->IncludeComponent(
+					"bitrix:breadcrumb",
+					"breadcrumb",
+					Array(
+						"PATH" => "",
+						"SITE_ID" => "s1",
+						"START_FROM" => "0"
+					)
+				);?>
+				<div class="title">
+					<?= $APPLICATION->ShowTitle() ?>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 <?$APPLICATION->IncludeComponent(
 	"bitrix:news.detail",
 	"info",
 	Array(
 		"ACTIVE_DATE_FORMAT" => "d.m.Y",
-		"ADD_ELEMENT_CHAIN" => "Y",
-		"ADD_SECTIONS_CHAIN" => "Y",
+		"ADD_ELEMENT_CHAIN" => "N",
+		"ADD_SECTIONS_CHAIN" => "N",
 		"AJAX_MODE" => "N",
 		"AJAX_OPTION_ADDITIONAL" => "",
 		"AJAX_OPTION_HISTORY" => "N",
