@@ -342,9 +342,14 @@ $this->setFrameMode(true);
 
     </div>
     <div class="vacancies__button">
+        <span>
+            Подробную информацию о вакансиях Вы можете узнать в отделе кадров по номеру телефона 8(862)271-90-45 <a href="mailto:ok@odisseya.com">ok@odisseya.com</a>
+        </span>
+        <?/*?>
         <a href="/vacancies/" class="btn">
             Подробнее
         </a>
+        <?*/?>
     </div>
 </section>
 <? if ($arResult['PROPERTIES']['FILE_OT']['VALUE']) { ?>

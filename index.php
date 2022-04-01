@@ -357,7 +357,7 @@
 	"main_medcentr", 
 	array(
 		"ACTIVE_DATE_FORMAT" => "d.m.Y",
-		"ADD_SECTIONS_CHAIN" => "Y",
+		"ADD_SECTIONS_CHAIN" => "N",
 		"AJAX_MODE" => "N",
 		"AJAX_OPTION_ADDITIONAL" => "",
 		"AJAX_OPTION_HISTORY" => "N",
@@ -383,7 +383,7 @@
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
 		"IBLOCK_ID" => "4",
 		"IBLOCK_TYPE" => "content",
-		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
 		"INCLUDE_SUBSECTIONS" => "Y",
 		"MESSAGE_404" => "",
 		"NEWS_COUNT" => "2",
@@ -412,8 +412,8 @@
 		),
 		"SET_BROWSER_TITLE" => "N",
 		"SET_LAST_MODIFIED" => "N",
-		"SET_META_DESCRIPTION" => "Y",
-		"SET_META_KEYWORDS" => "Y",
+		"SET_META_DESCRIPTION" => "N",
+		"SET_META_KEYWORDS" => "N",
 		"SET_STATUS_404" => "N",
 		"SET_TITLE" => "N",
 		"SHOW_404" => "N",
@@ -427,6 +427,7 @@
 	false
 );?>
 	</section>
+	<?/*?>
 	<section class="services">
 		<div class="wrapper">
 			<? $res = CIBlock::GetByID(5);
@@ -502,6 +503,7 @@
 			);?>
 		</div>
 	</section>
+	<?*/?>
 	<section class="video">
 		<div class="wrapper">
 			<?$APPLICATION->IncludeComponent("bitrix:news.detail", "main_video", Array(
@@ -563,6 +565,7 @@
 			);?>
 		</div>
 	</section>
+	<?/*?>
 	<section class="restaurants">
 		<div class="wrapper">
 			<? $res = CIBlock::GetByID(7);
@@ -718,6 +721,8 @@
 		</div>
 		<div class="decor_text">restaurants</div>
 	</section>
+	<?*/?>
+	<?/*?>
 	<section class="events">
 		<div class="wrapper">
 			<? $res = CIBlock::GetByID(9);
@@ -792,6 +797,8 @@
 );?>
 		</div>
 	</section>
+	<?*/?>
+	<?/*?>
 	<section id="action" class="action">
 		<div class="title marquee">
 			<? $res = CIBlock::GetByID(10);
@@ -906,6 +913,7 @@
 		</div>
 		<div class="decor_text">offers</div>
 	</section>
+	<?*/?>
 	<section id="contacts" class="contacts">
 		<div class="wrapper">
 			<? $res = CIBlock::GetByID(11);

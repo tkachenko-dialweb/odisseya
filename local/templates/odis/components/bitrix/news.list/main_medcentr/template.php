@@ -32,9 +32,13 @@ $this->setFrameMode(true);
 	?>
 	<div class="category" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
 		<div class="image"><img src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>" alt=""></div>
-		<div class="title_category"><?echo $arItem["NAME"]?></div>
+		<div class="title_category"><?echo $arItem["NAME"]?><?if ($arItem['ID'] == 8):?><br>оздоровления<?endif;?></div>
 		<div class="desc"><?= $arItem['PROPERTIES']['sub_title']['~VALUE']?></div>
-		<a href="#form_<?= $arItem['ID'];?>" class="button_transparent popup-with-form" data-effect="mfp-zoom-in">Подробнее</a>
+		<?if ($arItem['ID'] == 9) {?>
+			<a href="<?= $arItem['DETAIL_PAGE_URL'];?>" class="button_transparent" data-effect="mfp-zoom-in">Подробнее</a>
+		<?} else {?>
+			<a href="#form_<?= $arItem['ID'];?>" class="button_transparent popup-with-form" data-effect="mfp-zoom-in">Подробнее</a>
+		<?}?>
 		<div id="form_<?= $arItem['ID'];?>" class="<?if ($arItem['ID'] == 9):?>сardiology<?elseif($arItem['ID'] == 8):?>programs<?endif;?>_popup mfp-with-anim mfp-hide">
 			<div class="image">
 				<img src="<?=$arItem["DETAIL_PICTURE"]["SRC"]?>" alt="">
@@ -45,27 +49,27 @@ $this->setFrameMode(true);
 				<div class="sub_title"><?= $arItem['PROPERTIES']['sub_title_detail']['VALUE']?></div>
 				<? if ($arItem['PROPERTIES']['professionals']['VALUE']):?>
 					<div class="title">Специалисты:</div>
-					<div class="sub_info"><?= $arItem['PROPERTIES']['professionals']['VALUE']?></div>
+					<div class="sub_info"><?= $arItem['PROPERTIES']['professionals']['~VALUE']?></div>
 				<? endif; ?>
-				<?= $arItem["DETAIL_TEXT"]?>
+				<?= $arItem["~DETAIL_TEXT"]?>
 			</div>
 			<div class="bottom_popup">
 				<?if ($arItem['ID'] == 9):?>
-					<?= $arItem['PROPERTIES']['dop_info']['VALUE']?>
+					<?= $arItem['PROPERTIES']['dop_info']['~VALUE']?>
 				<?endif;?>
 				<?if ($arItem['ID'] == 8):?>
 					<div class="prices">
 						<div class="item">
 							<?= $arItem['PROPERTIES']['name_programm_one']['VALUE']?><br>
-							<span><?= $arItem['PROPERTIES']['price_programm_one']['VALUE']?></span> р/сутки
+							<span><?= $arItem['PROPERTIES']['price_programm_one']['~VALUE']?></span> р/сутки
 						</div>
 						<div class="item">
 							<?= $arItem['PROPERTIES']['name_programm_two']['VALUE']?><br>
-							<span><?= $arItem['PROPERTIES']['price_programm_two']['VALUE']?></span> р/сутки
+							<span><?= $arItem['PROPERTIES']['price_programm_two']['~VALUE']?></span> р/сутки
 						</div>
 						<div class="item">
 							<?= $arItem['PROPERTIES']['name_programm_three']['VALUE']?><br>
-							<span><?= $arItem['PROPERTIES']['price_programm_three']['VALUE']?></span> р/сутки
+							<span><?= $arItem['PROPERTIES']['price_programm_three']['~VALUE']?></span> р/сутки
 						</div>
 					</div>
 				<?endif;?>

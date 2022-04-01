@@ -8,7 +8,7 @@
 }
 
 .main .about {
-	padding: 80px 0 120px;
+	padding: 80px 15px 120px 15px;
     background: #FDF8EF;
 }
 
@@ -17,6 +17,7 @@
     background: #fff;
 	position: relative;
     z-index: 9;
+
 }
 
 .workers {
@@ -31,7 +32,7 @@
     color: unset;
 }
 .present.wow.fadeInUp{
-	display: flex;
+	/* display: flex; */
 	justify-content: space-between;
 	align-items: center;
 }
@@ -78,3 +79,11 @@
     padding: 0 30px;
 }
 /* Top menu - end */
+
+.title_category {
+    text-align: center;
+}
+
+.medcenter {
+    margin-bottom: 120px;
+}
